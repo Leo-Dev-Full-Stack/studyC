@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_MOTOS 1000  // Definindo um tamanho máximo para o vetor de motos
+#define MAX_MOTOS 1000 // Definindo um tamanho máximo para o vetor de motos
 
 typedef struct {
     char marca[20];
@@ -26,12 +26,13 @@ int main() {
         return 1;  // Retornamos um código de erro
     } else {
         while (i < MAX_MOTOS) {  // Permitir cadastro de múltiplas motos
+            printf("Voce esta no cadastro de numero: %d\n", i);
             printf("Digite a marca da moto: ");
-            scanf("%s", motos[i].marca);
+            scanf("%s", &motos[i].marca);
             printf("Digite o tipo da moto: ");
-            scanf("%s", motos[i].tipo);
+            scanf("%s", &motos[i].tipo);
             printf("Digite o modelo da moto: ");
-            scanf("%s", motos[i].modelo);
+            scanf("%s", &motos[i].modelo);
             printf("Digite o preco da moto: ");
             scanf("%f", &motos[i].preco);
             printf("Digite a quantidade de parcelas: ");

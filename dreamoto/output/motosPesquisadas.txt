@@ -70,3 +70,30 @@ Modelo: R3
 Preco: R$35628.00
 Quantidade de Parcelas: 60
 Valor das parcelas: R$593.80
+
+<-------------------!!------------------->
+
+Marca: YAMAHA
+Tipo: MT-SERIES
+Modelo: MT-09
+Preco: R$64811.00
+Quantidade de Parcelas: 60
+Valor das parcelas: R$1080.18
+
+<-------------------!!------------------->
+
+Marca: YAMAHA
+Tipo: MT-SERIES
+Modelo: MT-07
+Preco: R$51065.00
+Quantidade de Parcelas: 60
+Valor das parcelas: R$851.08
+
+<-------------------!!------------------->
+
+Marca: YAMAHA
+Tipo: MT-SERIES
+Modelo: MT-03
+Preco: R$34123.00
+Quantidade de Parcelas: 60
+Valor das parcelas: R$568.72
