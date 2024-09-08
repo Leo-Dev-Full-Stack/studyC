@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_MOTOS 1000 // Definindo um tamanho máximo para o vetor de motos
+#define MAX_MOTOS 100
 
 typedef struct {
     char marca[20];
@@ -16,17 +16,16 @@ int main() {
     FILE *arquivoMoto;
     int i = 0;
     float valorParcela;
-    moto motos[MAX_MOTOS];  // Criando um vetor de motos
+    moto motos[MAX_MOTOS];
 
     arquivoMoto = fopen("motosPesquisadas.txt", "a");
 
     if (arquivoMoto == NULL) {
         printf("Erro na abertura do arquivo!\n");
         system("pause");
-        return 1;  // Retornamos um código de erro
+        return 1;
     } else {
-        while (i < MAX_MOTOS) {  // Permitir cadastro de múltiplas motos
-            printf("Voce esta no cadastro de numero: %d\n", i);
+        while (i < MAX_MOTOS) {
             printf("Digite a marca da moto: ");
             scanf("%s", &motos[i].marca);
             printf("Digite o tipo da moto: ");
@@ -44,18 +43,17 @@ int main() {
             fprintf(arquivoMoto, "Marca: %s\nTipo: %s\nModelo: %s\nPreco: R$%.2f\nQuantidade de Parcelas: %d\nValor das parcelas: R$%.2f\n",
                     motos[i].marca, motos[i].tipo, motos[i].modelo, motos[i].preco, motos[i].qntdParcelas, valorParcela);
 
-            i++;  // Avançar para a próxima moto
+            i++;
             
-            // Pergunta se o usuário deseja cadastrar mais motos
             char continuar;
             printf("Deseja cadastrar outra moto? (s/n): ");
             scanf(" %c", &continuar);
             if (continuar != 's') {
-                break;  // Se não quiser continuar, sai do loop
+                break;
             }
         }
     }
 
-    fclose(arquivoMoto);  // Fecha o arquivo ao final
+    fclose(arquivoMoto);
     return 0;
 }
