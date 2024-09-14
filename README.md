@@ -25,8 +25,4 @@
             <li>pquadrado.c</li>
         </ul>
     </li>
-    <li>
-        <h2>dreamoto</h2>
-        <p>Uma ferramenta para planejar a compra da moto dos sonhos, controlando economias e metas financeiras.</p>
-    </li>
 </ul>
